@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="input-div">
+        <h2>Input type text</h2>
+        <form action="">
+            <label for="input-text">Input text</label>
+            <input type="text" id="input-text" minlength="10" maxlength="12" size="45" required>
+            <button>Submit</button>
+        </form>
+        <div>Code:</div>
+        <code id="code-box-text" class="code-box"></code>
+    </div>
+
+    <div class="input-div">
+        <h2>Input type number</h2>
+        <form action="">
+            <label for="input-number">Input number</label>
+            <input type="number" id="input-number" required>
+            <button>Submit</button>
+        </form>
+        <div>Code:</div>
+        <code id="code-box-number"></code>
+    </div>
+
+
+    <div class="input-div">
+        <h2>Input type email</h2>
+        <form action="">
+            <label for="input-email">Input email</label>
+            <input type="email" id="input-email" list="email-choices" maxlength="50" size="50" pattern=".+@globex.com" required>
+            <button>Submit</button>
+
+            <datalist id="email-choices">
+                <option value="omgate2003@gmail.com" label="Om Gate"></option>
+                <option value="siddhigate16@gmail.com" label="Siddhi Gate"></option>
+                <option value="bannaana@fortnite.com" label="Minions"></option>
+                <option value="1234@qfmoiwefwoeif.com" label="Elon Musk's Son"></option>
+            </datalist>
+        </form>
+        <div>Code:</div>
+        <code id="code-box-email"></code>
+    </div>
+
+    <div class="input-div">
+        <h2>Input type date</h2>
+        <form action="">
+            <label for="input-date">Input date</label>
+            <input type="date" id="input-date" required max="2019-08-22" min="2019-07-22" step="-4" value="2019-08-19">
+            <button>Submit</button>
+        </form>
+        <div>Code:</div>
+        <code id="code-box-date"></code>
+    </div>
+
+
+    <div class="input-div">
+        <h2>Input type URL</h2>
+        <form action="">
+            <label for="input-url">Input URL</label>
+            <input type="url" id="input-url" list="url-choices" pattern="https://.+" placeholder="https://" required>
+            <button>Submit</button>
+
+            <datalist id="url-choices">
+                <option value="https://web.whatsapp.com/" label="Whatsapp"></option>
+                <option value="siddhigate16@gmail.com"></option>
+                <option value="bannaana@fortnite.com"></option>
+                <option value="1234"></option>
+            </datalist>
+        </form>
+        <div>Code:</div>
+        <code id="code-box-url"></code>
+    </div>
+
+
+
+    <div class="input-div">
+        <h2>Input type color</h2>
+        <form id="form-color" action="">
+            <label for="input-color">Input number</label>
+            <input type="color" id="input-color" required>
+            <button>Submit</button>
+        </form>
+        <div>Code:</div>
+        <code id="code-box-color"></code>
+    </div>
+
+
+    <div class="input-div">
+        <h2>Input type search</h2>
+        <form action="">
+            <label for="input-search">Input search</label>
+            <input type="search" id="input-search" >
+            <button>Submit</button>
+        </form>
+        <div>Code:</div>
+        <code id="code-box-search"></code>
+    </div>
+    
+
+    <div class="input-div">
+        <h2>Input type tel</h2>
+        <form action="">
+            <label for="input-tel">Input tel</label>
+            <input type="tel" id="input-tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            <button>Submit</button>
+        </form>
+        <div>Code:</div>
+        <code id="code-box-tel"></code>
+    </div>
+    
+    
+    
+
+</body>
+
+<script>
+    const formResult = document.querySelector("#form-color")
+    const inputColor = document.querySelector("#input-color")
+    const codeBoxText = document.querySelector("#code-box-text")
+    const codeBoxNumber = document.querySelector("#code-box-number") 
+    const codeBoxEmail = document.querySelector("#code-box-email")
+    const codeBoxTel = document.querySelector("#code-box-tel")
+    const codeBoxDate = document.querySelector("#code-box-date")
+    const codeBoxURL = document.querySelector("#code-box-url")
+    const codeBoxColor = document.querySelector("#code-box-color")
+    const codeBoxSearch = document.querySelector("#code-box-search")
+
+    codeBoxTel.innerText = `<h2>Input type tel</h2>
+        <form action="">
+            <label for="input-tel">Input tel</label>
+            <input type="tel" id="input-tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            <button>Submit</button>
+         </form>`
+
+    codeBoxText.innerText = `<h2>Input type text</h2>
+        <form action="">
+            <label for="input-text">Input text</label>
+            <input type="text" id="input-text" minlength="10" maxlength="12" size="45" required>
+            <button>Submit</button>
+        </form>`
+
+    codeBoxNumber.innerText = `<h2>Input type number</h2>
+        <form action="">
+            <label for="input-number">Input number</label>
+            <input type="number" id="input-number" required>
+            <button>Submit</button>
+        </form>`
+
+    codeBoxEmail.innerText= `<h2>Input type email</h2>
+        <form action="">
+            <label for="input-email">Input email</label>
+            <input type="email" id="input-email" list="email-choices" maxlength="50" size="50" pattern=".+@globex.com" required>
+            <button>Submit</button>
+
+            <datalist id="email-choices">
+                <option value="omgate2003@gmail.com" label="Om Gate"></option>
+                <option value="siddhigate16@gmail.com" label="Siddhi Gate"></option>
+                <option value="bannaana@fortnite.com" label="Minions"></option>
+                <option value="1234@qfmoiwefwoeif.com" label="Elon Musk's Son"></option>
+            </datalist>
+        </form>`
+    
+    codeBoxDate.innerText = `<h2>Input type date</h2>
+        <form action="">
+            <label for="input-date">Input date</label>
+            <input type="date" id="input-date" required max="2019-08-22" min="2019-07-22" step="-4" value="2019-08-19">
+            <button>Submit</button>
+        </form>`
+
+    codeBoxURL.innerText = `<h2>Input type URL</h2>
+        <form action="">
+            <label for="input-url">Input URL</label>
+            <input type="url" id="input-url" list="url-choices" pattern="https://.+" placeholder="https://" required>
+            <button>Submit</button>
+
+            <datalist id="url-choices">
+                <option value="https://web.whatsapp.com/" label="Whatsapp"></option>
+                <option value="siddhigate16@gmail.com"></option>
+                <option value="bannaana@fortnite.com"></option>
+                <option value="1234"></option>
+            </datalist>
+        </form>`
+    
+    codeBoxColor.innerText = `<h2>Input type color</h2>
+        <form id="form-color" action="">
+            <label for="input-color">Input number</label>
+            <input type="color" id="input-color" required>
+            <button>Submit</button>
+        </form`
+    
+    codeBoxSearch.innerText = `<h2>Input type search</h2>
+        <form action="">
+            <label for="input-search">Input search</label>
+            <input type="search" id="input-search" >
+            <button>Submit</button>
+        </form>`
+
+    
+    formResult.addEventListener("submit", (event) => {
+        event.preventDefault()
+        console.log(inputColor.value)
+        
+    })
+</script>
+</html>
