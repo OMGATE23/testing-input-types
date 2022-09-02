@@ -11,7 +11,7 @@
 
     <div class="input-div">
         <h2>Input type text</h2>
-        <form action="">
+        <form  action="">
             <label for="input-text">Input text</label>
             <input type="text" id="input-text" minlength="10" maxlength="12" size="45" required>
             <button>Submit</button>
@@ -24,7 +24,7 @@
         <h2>Input type number</h2>
         <form action="">
             <label for="input-number">Input number</label>
-            <input type="number" id="input-number" required>
+            <input type="number" id="input-number" min = "10" max="20" step="2" required>
             <button>Submit</button>
         </form>
         <div>Code:</div>
@@ -36,14 +36,14 @@
         <h2>Input type email</h2>
         <form action="">
             <label for="input-email">Input email</label>
-            <input type="email" id="input-email" list="email-choices" maxlength="50" size="50" pattern=".+@globex.com" required>
+            <input type="email" id="input-email" list="email-choices" minlength="5" maxlength="50" size="50" pattern=".+@.com" required>
             <button>Submit</button>
 
             <datalist id="email-choices">
-                <option value="omgate2003@gmail.com" label="Om Gate"></option>
-                <option value="siddhigate16@gmail.com" label="Siddhi Gate"></option>
-                <option value="bannaana@fortnite.com" label="Minions"></option>
-                <option value="1234@qfmoiwefwoeif.com" label="Elon Musk's Son"></option>
+                <option value="omgate@email.com" label="Om Gate"></option>
+                <option value="elonmusk@email.com" label="Elon Musk"></option>
+                <option value="satyanadela@microsoft.in" label="Satya"></option>
+                <option value="1234@qfmoiwefwoeif.xyz" label="Elon Musk's Son"></option>
             </datalist>
         </form>
         <div>Code:</div>
@@ -54,7 +54,7 @@
         <h2>Input type date</h2>
         <form action="">
             <label for="input-date">Input date</label>
-            <input type="date" id="input-date" required max="2019-08-22" min="2019-07-22" step="-4" value="2019-08-19">
+            <input type="date" id="input-date" required max="2019-08-22" min="2019-07-22" step="2" value="2019-08-19">
             <button>Submit</button>
         </form>
         <div>Code:</div>
@@ -66,14 +66,13 @@
         <h2>Input type URL</h2>
         <form action="">
             <label for="input-url">Input URL</label>
-            <input type="url" id="input-url" list="url-choices" pattern="https://.+" placeholder="https://" required>
+            <input type="url" id="input-url" list="url-choices" placeholder="https://" required>
             <button>Submit</button>
 
             <datalist id="url-choices">
+                <option value="https://omgate.netlify.app/" label="Om's Portfolio"></option>
                 <option value="https://web.whatsapp.com/" label="Whatsapp"></option>
-                <option value="siddhigate16@gmail.com"></option>
-                <option value="bannaana@fortnite.com"></option>
-                <option value="1234"></option>
+                <option value="https://www.google.com/" label="Google"></option>
             </datalist>
         </form>
         <div>Code:</div>
@@ -139,10 +138,10 @@
             <label for="input-tel">Input tel</label>
             <input type="tel" id="input-tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
             <button>Submit</button>
-         </form>`
+        </form>`
 
     codeBoxText.innerText = `<h2>Input type text</h2>
-        <form action="">
+        <form  action="">
             <label for="input-text">Input text</label>
             <input type="text" id="input-text" minlength="10" maxlength="12" size="45" required>
             <button>Submit</button>
@@ -151,42 +150,41 @@
     codeBoxNumber.innerText = `<h2>Input type number</h2>
         <form action="">
             <label for="input-number">Input number</label>
-            <input type="number" id="input-number" required>
+            <input type="number" id="input-number" min = "10" max="20" step="2" required>
             <button>Submit</button>
         </form>`
 
     codeBoxEmail.innerText= `<h2>Input type email</h2>
         <form action="">
             <label for="input-email">Input email</label>
-            <input type="email" id="input-email" list="email-choices" maxlength="50" size="50" pattern=".+@globex.com" required>
+            <input type="email" id="input-email" list="email-choices" minlength="5" maxlength="50" size="50" pattern=".+@.com" required>
             <button>Submit</button>
 
             <datalist id="email-choices">
-                <option value="omgate2003@gmail.com" label="Om Gate"></option>
-                <option value="siddhigate16@gmail.com" label="Siddhi Gate"></option>
-                <option value="bannaana@fortnite.com" label="Minions"></option>
-                <option value="1234@qfmoiwefwoeif.com" label="Elon Musk's Son"></option>
+                <option value="omgate@email.com" label="Om Gate"></option>
+                <option value="elonmusk@email.com" label="Elon Musk"></option>
+                <option value="satyanadela@microsoft.in" label="Satya"></option>
+                <option value="1234@qfmoiwefwoeif.xyz" label="Elon Musk's Son"></option>
             </datalist>
         </form>`
     
     codeBoxDate.innerText = `<h2>Input type date</h2>
         <form action="">
             <label for="input-date">Input date</label>
-            <input type="date" id="input-date" required max="2019-08-22" min="2019-07-22" step="-4" value="2019-08-19">
+            <input type="date" id="input-date" required max="2019-08-22" min="2019-07-22" step="2" value="2019-08-19">
             <button>Submit</button>
         </form>`
 
     codeBoxURL.innerText = `<h2>Input type URL</h2>
         <form action="">
             <label for="input-url">Input URL</label>
-            <input type="url" id="input-url" list="url-choices" pattern="https://.+" placeholder="https://" required>
+            <input type="url" id="input-url" list="url-choices" placeholder="https://" required>
             <button>Submit</button>
 
             <datalist id="url-choices">
+                <option value="https://omgate.netlify.app/" label="Om's Portfolio"></option>
                 <option value="https://web.whatsapp.com/" label="Whatsapp"></option>
-                <option value="siddhigate16@gmail.com"></option>
-                <option value="bannaana@fortnite.com"></option>
-                <option value="1234"></option>
+                <option value="https://www.google.com/" label="Google"></option>
             </datalist>
         </form>`
     
@@ -195,7 +193,7 @@
             <label for="input-color">Input number</label>
             <input type="color" id="input-color" required>
             <button>Submit</button>
-        </form`
+        </form>`
     
     codeBoxSearch.innerText = `<h2>Input type search</h2>
         <form action="">
@@ -210,5 +208,6 @@
         console.log(inputColor.value)
         
     })
+
 </script>
 </html>
